@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Test Reports Dashboard</title>
+    <style>
+        /* Estilos semelhantes ao index.html anterior */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e2f; color: #ffffff; line-height: 1.6; }
+        header { text-align: center; padding: 2rem 1rem; background: linear-gradient(90deg, #ff6363, #ff8842); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1rem; color: #e0e0e0; }
+        main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        table { width: 100%; border-collapse: collapse; background: #2c2c3e; margin-top: 2rem; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); }
+        thead { background: #ff4444; color: #ffffff; }
+        th, td { padding: 1rem; text-align: left; }
+        th { font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        tbody tr:nth-child(odd) { background-color: #323247; }
+        tbody tr:nth-child(even) { background-color: #2a2a3c; }
+        tbody tr:hover { background-color: #704070; cursor: pointer; }
+        a { text-decoration: none; color: #ff8842; font-weight: bold; }
+        a:hover { color: #ff6363; }
+        footer { text-align: center; padding: 2rem 1rem; color: #999999; background: #181825; margin-top: 2rem; }
+        footer a { color: #ff8842; text-decoration: none; }
+        footer a:hover { color: #ff6363; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Load Test Reports Dashboard</h1>
+        <p>Explore the results of our load testing efforts</p>
+    </header>
+    <main>
+        <h2 style="text-align: center; margin-bottom: 1rem;">Available Reports</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Report Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Load Test Report - Run 1</td>
+                    <td>Results from the first load test run</td>
+                    <td><a href="load-tests/reports/run1/index.html?t=${new Date().getTime()}" target="_blank">View Report</a></td>
+                </tr>
+                <tr>
+                    <td>Load Test Report - Run 2</td>
+                    <td>Results from the second load test run</td>
+                    <td><a href="load-tests/reports/run2/index.html?t=${new Date().getTime()}" target="_blank">View Report</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
